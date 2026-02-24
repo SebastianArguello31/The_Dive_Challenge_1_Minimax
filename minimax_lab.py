@@ -87,7 +87,7 @@ def minimax(pos_gato, pos_raton, meta, profundidad, es_max):
         return mejor_valor
 
 def obtener_mejor_movimiento(esRaton, pos_gato, pos_raton, meta):
-    profundidad = 5
+    profundidad = 8
     movimientos = obtener_movimientos(pos_raton if esRaton else pos_gato)
     mejores_movs = []
 
@@ -186,6 +186,4 @@ def empezar_juego():
         print(f'\nTIEMPO AGOTADO. Se alcanzaron los {TURNOS_MAX} turnos')
         print('El raton no llego a la meta, pero el gato no lo atrapo. EMPATE')
 
-if __name__ == '__main__':
-    empezar_juego()
-                                 
+empezar_juego()
